@@ -1,6 +1,6 @@
 # VPN Gate Android client
 
-Pick a country, tap it, you're connected.
+Personal project. Makes using vpn gate more convenient.
 
 [VPN Gate](https://www.vpngate.net/) is a pool of volunteer-run public VPN relays. Using it by
 hand is a chore: open the site, scan a table, download an `.ovpn`, import it into a VPN client,
