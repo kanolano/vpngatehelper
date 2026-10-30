@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Applies below API 31. -->
+<full-backup-content>
+    <!-- A public server list; re-fetched in seconds and not worth shipping off-device. -->
+    <exclude domain="file" path="servers.csv" />
+    <!-- Holds the pinned companion-app signer, which is specific to THIS device's install.
+         Restoring it elsewhere would mismatch and wrongly block the engine. -->
+    <exclude domain="file" path="datastore/" />
+</full-backup-content>

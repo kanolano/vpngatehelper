@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">VPN Gate</string>
+
+    <!-- Actions -->
+    <string name="action_install">Install</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_quick_connect">Quick Connect</string>
+    <string name="action_got_it">Got it</string>
+    <string name="action_connect_to">Connect to %1$s</string>
+
+    <!-- Connection state -->
+    <string name="state_not_connected">Not connected</string>
+    <string name="state_not_connected_detail">Pick a server, or let Quick Connect choose</string>
+    <string name="state_connecting">Connecting…</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_connected_elsewhere">A tunnel is up that was started outside this app</string>
+    <string name="state_paused">Paused</string>
+    <string name="state_paused_detail">OpenVPN for Android has paused the tunnel</string>
+    <string name="state_no_network">Waiting for network</string>
+    <string name="state_no_network_detail">The device is offline</string>
+    <string name="state_auth_failed">Authentication failed</string>
+    <string name="state_auth_failed_detail">The relay rejected the profile</string>
+    <string name="state_error">Error</string>
+    <string name="state_engine_missing">OpenVPN for Android not installed</string>
+    <string name="state_engine_missing_detail">This app hands the profile to OpenVPN for Android, which runs the tunnel. Install it once from Google Play or F-Droid.</string>
+    <string name="state_engine_untrusted">OpenVPN for Android could not be trusted</string>
+    <string name="state_engine_untrusted_detail">No profile was sent because %1$s. Reinstall it from Google Play or F-Droid.</string>
+
+    <!-- "🇯🇵 Japan · 219.100.37.9" -->
+    <string name="server_location">%1$s %2$s · %3$s</string>
+    <!-- "🇯🇵 Japan · 219.100.37.9:443 (TCP)" -->
+    <string name="server_location_full">%1$s %2$s · %3$s:%4$d (%5$s)</string>
+
+    <!-- Privacy notice -->
+    <string name="notice_title">Read this before you rely on it</string>
+    <string name="notice_body">These relays are run by volunteers, not by this app. Traffic is encrypted with AES-128-CBC and SHA-1, which VPN Gate\'s servers require and which this app cannot upgrade. Whoever operates the relay you pick can see the sites you reach. Treat it as a way to change your apparent location, not as a privacy guarantee, and don\'t send anything sensitive through it.</string>
+
+    <!-- List controls -->
+    <string name="filter_all">All</string>
+    <string name="filter_tcp">TCP</string>
+    <string name="filter_udp">UDP</string>
+    <string name="filter_all_count">All %1$d</string>
+    <string name="filter_country">%1$s %2$s %3$d</string>
+    <string name="sort_label">Sort: %1$s</string>
+    <string name="sort_score">Score</string>
+    <string name="sort_ping">Ping</string>
+    <string name="sort_speed">Speed</string>
+    <string name="sort_uptime">Uptime</string>
+
+    <!-- Status line -->
+    <string name="status_loading">Loading servers…</string>
+    <string name="status_not_loaded">Not loaded yet</string>
+    <string name="status_offline">Offline — saved list from %1$s</string>
+    <string name="status_updated">Updated %1$s</string>
+    <string name="status_showing_filtered">%1$s · showing %2$d of %3$d</string>
+
+    <string name="error_with_cache">%1$s — showing the last saved list.</string>
+
+    <!-- Empty state -->
+    <string name="empty_fetching">Fetching the VPN Gate server list…</string>
+    <string name="empty_filtered">No servers match this filter.</string>
+    <string name="empty_error">Could not load the server list.</string>
+    <string name="empty_none">No servers available.</string>
+    <string name="empty_pull_to_retry">Pull down to retry.</string>
+
+    <!-- Row detail: "12 ms · 22.7 Mbps · up 5d 13h · 80 users" -->
+    <string name="row_metrics">%1$s · %2$s · up %3$s · %4$s</string>
+    <string name="row_endpoint">%1$s:%2$d</string>
+    <string name="badge_active">ACTIVE</string>
+
+    <!-- Messages -->
+    <string name="msg_engine_required">OpenVPN for Android is required to open a tunnel</string>
+    <string name="msg_permission_denied">Permission was not granted, so the tunnel cannot start</string>
+    <string name="msg_no_servers">No servers to choose from</string>
+
+    <string name="msg_unusable_profile">%1$s</string>
+    <string name="msg_consent_dialog_failed">Could not open the permission dialog</string>
+    <string name="msg_no_handler">No app can open that link</string>
+
+    <!-- Quick Connect progress, e.g. "Trying Japan (2 of 3)" -->
+    <string name="state_connecting_attempt">Trying %1$s (%2$d of %3$d)</string>
+
+    <plurals name="status_showing_all">
+        <item quantity="one">%1$s · %2$d server</item>
+        <item quantity="other">%1$s · %2$d servers</item>
+    </plurals>
+
+    <plurals name="msg_none_connected">
+        <item quantity="one">Tried %1$d server, it did not connect. Pull to refresh the list.</item>
+        <item quantity="other">Tried %1$d servers, none connected. Pull to refresh the list.</item>
+    </plurals>
+
+    <plurals name="sessions">
+        <item quantity="one">%1$d user</item>
+        <item quantity="other">%1$d users</item>
+    </plurals>
+</resources>

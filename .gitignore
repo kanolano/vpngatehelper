@@ -1,0 +1,32 @@
+# Build output
+build/
+.gradle/
+.kotlin/
+captures/
+.externalNativeBuild
+.cxx
+
+# Machine-specific; contains local SDK paths
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Signing material must never be committed
+*.jks
+*.keystore
+*.p12
+*.pem
+keystore.properties
+
+# Artifacts
+*.apk
+*.aab
+*.aar
+
+# OS
+.DS_Store
+Thumbs.db

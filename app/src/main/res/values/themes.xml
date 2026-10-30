@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.VpnGateClient" parent="android:Theme.Material.NoActionBar" />
+</resources>
